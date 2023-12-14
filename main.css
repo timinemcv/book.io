@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+
+.bookContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #e1e1e1;
+  font-family: inter;
+}
+.mybook {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  transition: transform 0.5s;
+}
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+.frontPage,
+.backPage {
+  background-color: #56704c;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.frontPage {
+  z-index: 1;
+  backface-visibility: hidden;
+  border-left: 7px solid #1a1a1a;
+}
+
+.backPage {
+  z-index: 0;
+}
+
+.frontContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.backContent {
+  transform: rotateY(180deg);
+}
+
+.flipped .frontPage,
+.flipped .backPage {
+  transform: rotateY(-180deg);
+}
+
+#pageOne {
+  z-index: 3;
+}
+
+#pageTwo {
+  z-index: 2;
+}
+
+#pageThree {
+  z-index: 1;
+}
+.buttons {
+  margin-top: 20px;
+}
+.buttons button {
+  padding: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 20px;
+}
+.buttons button:hover {
+  color: #1a1a1a;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 1000ms;
+}
+
+.intro {
+  display: grid;
+  gap: 20px;
+}
+.intro p,
+.intro h6 {
+  color: #fae4e4;
+}
+.intro h1,
+.intro h3 {
+  color: #e1e1e1;
+}
+.pageContentOne {
+  color: white;
+  font-size: 11.5px;
+}
+.pageContentOne h3 {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  color: #1a1a1a;
+  /* font-size: 10px; */
+  font-weight: 900;
+}
+.pageContentOne p {
+  /* font-size: 12px; */
+  padding: 20px;
+}
+.pageContentOne h6 {
+  display: flex;
+  justify-content: center;
+}
+.pageCon h6 {
+  margin-top: 110px;
+}
+.pageCont h6 {
+  margin-top: 80px;
+}
+.pageContent h6 {
+  margin-top: 70px;
+}
