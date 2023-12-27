@@ -141,3 +141,29 @@
 .pageContent h6 {
   margin-top: 70px;
 }
+#pageCounterOne {
+  display: flex;
+  justify-content: center;
+}
+
+#pageCounterTwo {
+  display: flex;
+  justify-content: center;
+}
+#pageCounterThree {
+  display: flex;
+  justify-content: center;
+}
+#pageCounterFour {
+  display: flex;
+  justify-content: center;
+}
+#pageCounterFive {
+  display: flex;
+  justify-content: center;
+}
+
+#pageCounterSix {
+  display: flex;
+  justify-content: center;
+}
